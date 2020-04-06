@@ -1,2 +1,2 @@
 greet:
-  message: Welcome, You have succesfully configured it 
+  message: Welcome %s, You have succesfully configured it 
