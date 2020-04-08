@@ -1,8 +1,2 @@
 greet:
   message: Welcome %s, You have succesfully configured it
-
-management:
-  endpoints:
-    web:
-      exposure:
-        include: '*'
