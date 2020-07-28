@@ -2,13 +2,15 @@ eureka:
   client:
     registry-fetch-interval-seconds: 5
     service-url:
-      defaultZone: http://localhost:8800/eureka/
-  instance: 
+      defaultZone: https://localhost:8800/eureka/
+  instance:
+    securedPort: ${server.port}
     nonSecurePortEnabled: false
     securePortEnabled: true
-    securePort: ${server.port}
-    homePageUrl: https://${eureka.instance.hostname}:${server.port}/
-    secureVirtualHostName: ${spring.application.name}
+    statusPageUrl: https://localhost:${eureka.instance.securePort}/info
+    healthCheckUrl: https://localhost:${eureka.instance.securePort}/health
+    homePageUrl: https://localhost:${eureka.instance.securePort}
+
 management:
   endpoints:
     web:
