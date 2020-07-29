@@ -7,8 +7,8 @@ eureka:
     securedPort: ${server.port}
     nonSecurePortEnabled: false
     securePortEnabled: true
-    statusPageUrl: https://localhost:${server.port}/info
-    healthCheckUrl: https://localhost:${server.port}/health
+    statusPageUrl: https://localhost:${server.port}/actuator/info
+    healthCheckUrl: https://localhost:${server.port}/actuator/health
     homePageUrl: https://localhost:${server.port}
 
 management:
