@@ -7,9 +7,9 @@ eureka:
     securedPort: ${server.port}
     nonSecurePortEnabled: false
     securePortEnabled: true
-    statusPageUrl: https://localhost:${eureka.instance.securePort}/info
-    healthCheckUrl: https://localhost:${eureka.instance.securePort}/health
-    homePageUrl: https://localhost:${eureka.instance.securePort}
+    statusPageUrl: https://localhost:${server.port}/info
+    healthCheckUrl: https://localhost:${server.port}/health
+    homePageUrl: https://localhost:${server.port}
 
 management:
   endpoints:
